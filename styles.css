@@ -1,0 +1,446 @@
+/* header */
+.header {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    background-color: #004d99;
+}
+
+img {
+    border: 2px solid #CCCCCC;
+    border-radius: 8px;
+}
+
+body {
+    font-family: Helvetica, Arial, sans-serif;
+}
+
+.small-text {
+    font-family: Arial, sans-serif;
+    font-size: 1rem;
+}
+
+@media (max-width: 768px) {
+    body {
+        font-size: 0.9rem;
+    }
+}
+
+@media (max-width: 576px) {
+    body {
+        font-size: 0.8rem;
+    }
+}
+
+/* logo */
+.logo img {
+    border: none;
+    padding-top: 20px;
+    padding-left: 5px;
+    position: relative;
+    z-index: 2;
+    width: 100%;
+    height: auto;
+}
+
+@media (max-width: 768px) {
+    .logo img {
+        width: 90%;
+        height: auto;
+    }
+}
+
+@media (max-width: 576px) {
+    .logo img {
+        display: none;
+    }
+}
+
+/* login icon es button */
+.login-icon a {
+    font-size: 24px;
+    padding: 8px 12px;
+    display: inline-block;
+}
+
+.login-icon i {
+    font-size: inherit;
+}
+
+@media (max-width: 768px) {
+    .login-icon a {
+        font-size: 16px;
+        padding: 7px 10px;
+    }
+}
+
+@media (max-width: 576px) {
+    .login-icon a {
+        font-size: 12px;
+        padding: 6px 8px;
+    }
+}
+
+.login-icon .btn-secondary {
+    background-color: #003366;
+    border-color: #003366;
+}
+
+/* Login/reg dropdown menu */
+.dropdown-item:hover {
+    background-color: #6699cc;
+}
+
+/* navbar es navlink */
+.navbar {
+    border: 2px solid #004080;
+}
+
+.navbar a:hover {
+    background: #6699cc;
+    border-radius: 8px;
+    color: black;
+}
+
+.nav-link {
+    font-weight: 500;
+    color: #004d99;
+}
+
+.navbar-nav .nav-link.active {
+    color: #808080;
+}
+
+/* insite nav bar on history page */
+.my-insite-nav a:hover {
+    background: #6699cc;
+    border-radius: 8px;
+    color: black;
+}
+
+/* quote margins */
+.my-quote {
+    margin-top: 20px;
+    margin-bottom: 50px;
+    font-size: 1.2em;
+}
+
+@media (max-width: 768px) {
+    .my-quote {
+        margin-top: 15px;
+        margin-bottom: 30px;
+        font-size: 0.9em;
+    }
+}
+
+@media (max-width: 576px) {
+    .my-quote {
+        margin-top: 10px;
+        margin-bottom: 10px;
+        font-size: 0.6em;
+    }
+}
+
+/* oldaltorzs */
+.indexh2 {
+    font-size: 1.75rem;
+}
+
+.article-content {
+    line-height: 1.5 !important;
+    font-size: 1.15rem !important;
+}
+
+.thumbnail-img {
+    width: 100%;
+    height: auto;
+    max-width: 400px;
+    display: block;
+}
+
+@media (max-width: 768px) {
+    .thumbnail-img {
+        max-width: 300px;
+    }
+}
+
+/* footer */
+.footer {
+    background-color: #004d99;
+    color: white;
+    padding: 20px;
+    text-align: center;
+    width: 100%;
+}
+
+.footer-links {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.footer-links a {
+    color: #fff;
+    text-decoration: underline;
+    padding: 0 10px;
+    border-right: 1px solid #ffffff;
+    font-size: 1.2rem;
+}
+
+.footer-links a:visited {
+    color: #999999;
+    font-size: 1rem !important;
+}
+
+.footer-links a:last-child {
+    border-right: none;
+}
+
+.footer-links a:hover {
+    background-color: #e6e6e6;
+    color: #004d99;
+    border-radius: 5px;
+}
+
+.copyright {
+    color: #ffffff;
+    margin-top: 20px;
+}
+
+
+/* image header bg (History lapon) */
+.header-with-bg {
+    background-image: url(./img/header-bg.jpg);
+    background-size: cover;
+    background-position: center;
+    color: white;
+}
+
+.header-with-bg h1 {
+    font-size: 5rem;
+    font-weight: 700;
+    color: white;
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.8);
+}
+
+.header .login-icon a {
+    border: 2px solid white;
+    border-radius: 50%;
+    padding: 5px;
+    box-shadow: 0 0 5px rgba(255,255,255,0.5);
+}
+
+/* image downsizing stilusok; a szamok a width%-okat jelolik a torespontokon*/
+.downsize-img-35-45-55 {
+    width: 35%;
+    height: auto;
+}
+
+@media (max-width: 768px) {
+    .downsize-img-35-45-55 {
+        width: 45%;
+        height: auto;
+    }
+}
+
+@media (max-width: 576px) {
+    .downsize-img-35-45-55 {
+        width: 55%;
+        height: auto;
+    }
+}
+
+.downsize-img-40-60-100 {
+    width: 40%;
+    height: auto;
+}
+
+@media (max-width: 768px) {
+    .downsize-img-40-60-100 {
+        width: 60%;
+        height: auto;
+    }
+}
+
+@media (max-width: 576px) {
+    .downsize-img-40-60-100 {
+        width: 100%;
+        height: auto;
+    }
+}
+
+.downsize-img-50-70-100 {
+    width: 50%;
+    height: auto;
+}
+
+@media (max-width: 768px) {
+    .downsize-img-50-70-100 {
+        width: 70%;
+        height: auto;
+    }
+}
+
+@media (max-width: 576px) {
+    .downsize-img-50-70-100 {
+        width: 100%;
+        height: auto;
+    }
+}
+
+.downsize-img-65-85-100 {
+    width: 65%;
+    height: auto;
+}
+
+@media (max-width: 768px) {
+    .downsize-img-65-85-100 {
+        width: 85%;
+        height: auto;
+    }
+}
+
+@media (max-width: 576px) {
+    .downsize-img-65-85-100{
+        width: 100%;
+        height: auto;
+    }
+}
+
+.downsize-img-70 {
+    width: 80%;
+    height: auto;
+}
+
+/* carousel */
+#myCarousel {
+    background-image: url('./img/carousel_bg.webp') !important;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#myCarousel .carousel-item img {
+    border: none;
+}
+
+/* visually impaired assistance*/
+.visually-impaired * {
+    background-color: black !important;
+    color: yellow !important;
+    font-size: 1.5rem !important;
+}
+
+/* ad horizontalis scrolling lehetoseget 
+(squad page-en a contrast mode tabla tulcsordult)*/
+.visually-impaired table {
+    font-size: 0.8rem !important;
+    overflow-x: auto; 
+}
+
+.visually-impaired a:hover {
+    color: #FF00FF !important;
+}
+
+#visuallyImpairedButton:hover {
+    cursor: pointer;
+}
+
+@media (max-width: 768px) {
+    .visually-impaired * {
+        font-size: 1.2rem !important;
+    }
+}
+
+@media (max-width: 480px) {
+    .visually-impaired * {
+        font-size: 1.1rem !important;
+    }
+}
+
+.embed {
+    width: 100%;
+    height: 240px;
+    border: none;
+}
+
+/* link divider*/
+.divider {
+    margin: 0 5px;
+    color: #999;
+}
+
+/* Custom CSS for Additional Content Links */
+
+/* Link item styling */
+.link-item {
+    color: #007bff;
+    text-decoration: underline;
+    transition: color 0.3s ease;
+    font-size: 1.2rem;
+    display: inline-block;
+    margin-bottom: 10px;
+}
+
+.link-item:visited {
+    font-size: 1rem;
+    color: #6699cc;
+}
+
+.link-item:hover {
+    background: #6699cc;
+    border-radius: 8px;
+    color: black;
+}
+
+/* Divider styling */
+.divider {
+    margin: 0 5px;
+    color: #999;
+}
+
+/* additional content link styling kisebb kepernyokre */
+@media (max-width: 768px) {
+    .link-item {
+        display: block;
+        margin-bottom: 5px;
+    }
+
+    .divider {
+        display: none;
+    }
+}
+
+.read-description:hover {
+    background: #99ccff;
+    border-radius: 8px;
+    font-size: 1.1rem;
+}
+
+.read-description:visited {
+    font-size: 1rem;
+    color: #6699cc !important;
+}
+
+/* print style */
+@media print {
+    body {
+        background-color: #FFFFFF;
+        color: #000000;
+        font-family: serif;
+    }
+    header, footer, nav, .navbar, .no-print {
+        display: none;
+    }
+    .important-image {
+        display: block;
+        max-width: 100%;
+        height: auto;
+    }
+    a {
+        text-decoration: none;
+        color: #000000;
+    }
+    .content {
+        width: 100%;
+        margin: 0 auto;
+    }
+}

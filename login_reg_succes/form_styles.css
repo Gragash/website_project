@@ -1,0 +1,98 @@
+/* login page */
+.login-page {
+    text-align: center;
+    color: #034694;
+}
+
+.login-page .logo img {
+    margin: 0 auto;
+    padding-top: 30px;
+    height: 200px;
+    width: auto;
+}
+
+.login-page .h1 {
+    padding-bottom: 20px;
+}
+
+.login-page input[type="text"],
+.login-page input[type="password"],
+.login-page button {
+    width: 50%; 
+    font-size: 1.5rem;
+    margin: 10px auto;
+}
+
+.login-page .form-label {
+    font-size: 1.25rem;
+}
+
+.login-page .container {
+    width: 100%;
+    margin-top: 30px;
+}
+
+/* registration page */
+.reg-page .logo img {
+    margin: 0 auto;
+    padding-top: 15px;
+    height: 150px;
+    width: auto;
+}
+
+.reg-page {
+    text-align: center;
+    color: #034694;
+}
+
+.reg-page .h1 {
+    margin-top: 0;
+    padding-bottom: 40px;
+}
+
+.reg-page .form-label {
+    font-size: 1.25rem;
+}
+
+.reg-page .form-check-label {
+    font-size: 1.25rem;
+}
+
+.reg-page .name-label {
+    text-align: left;
+    width: 180px; /* first name last name szovegekhez hogy 1 sorba keruljenek*/
+}
+
+.reg-page .container {
+    width: 100%;
+    margin-top: 10px;
+}
+
+.form-check.checkbox {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    box-sizing: border-box;
+}
+
+.form-check-input {
+    border: 2px solid #7ab8f5;  /* Light blue border */
+    margin-right: 5px;  /* Adds space between the checkbox and the label */
+}
+
+
+/* visually impaired assistance*/
+.visually-impaired * {
+    background-color: black !important;
+    color: yellow !important;
+    font-size: 1.5rem !important;
+}
+
+.visually-impaired a:hover {
+    color: #FF00FF !important;
+}
+
+#visuallyImpairedButton:hover {
+    cursor: pointer;
+}

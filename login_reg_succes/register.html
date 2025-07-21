@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration page</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link href="form_styles.css" rel="stylesheet">
+</head>
+
+<body class="reg-page">
+    <header>
+        <div class="header">
+            <div class="logo">
+                <img src="../img/logo.png" alt="Chelsea Football Club Logo">
+            </div>
+        </div>
+    </header>
+    <div class="container mt-5">
+        <h1 class="h1">Registration form</h1>
+        <!-- Atkuldes a success oldalra, nincs valodi input validacio es user tracking -->
+        <form id="myForm">
+            <div class="row">
+                <!-- First Name -->
+                <div class="col-md-6">
+                    <div class="mb-3 d-flex align-items-center">
+                        <label for="firstName" class="form-label name-label me-3">First Name</label>
+                        <input type="text" class="form-control" id="firstName" name="firstName" required maxlength="50">
+                    </div>
+                </div>
+                <!-- Last Name -->
+                <div class="col-md-6">
+                    <div class="mb-3 d-flex align-items-center">
+                        <label for="lastName" class="form-label name-label me-3">Last Name</label>
+                        <input type="text" class="form-control" id="lastName" name="lastName" required maxlength="50">
+                    </div>
+                </div>
+            </div>
+            <!-- Email Address -->
+            <div class="mb-3 d-flex align-items-center">
+                <label for="email" class="form-label name-label me-3">Email Address</label>
+                <input type="email" class="form-control" id="email" name="email" required maxlength="100">
+            </div>
+            <!-- Username -->
+            <div class="mb-3 d-flex align-items-center">
+                <label for="username" class="form-label name-label me-3">Username</label>
+                <input type="text" class="form-control" id="username" name="username" required maxlength="20">
+            </div>
+            <!-- Password -->
+            <div class="mb-3 d-flex align-items-center">
+                <label for="password" class="form-label name-label me-3">Password</label>
+                <input type="password" class="form-control" id="password" name="password" required maxlength="30">
+            </div>
+            <!-- Date of Birth -->
+            <div class="row">
+                <div class="col-md-6">
+                    <div class="mb-3 d-flex align-items-center">
+                        <label for="dob" class="form-label name-label me-3">Date of Birth</label>
+                        <input type="date" class="form-control" id="dob" name="dob" required>
+                    </div>
+                </div>
+            </div> 
+            <!-- text area (favorite chelsea memory)-->
+            <br>
+            <div class="mb-3">
+                <label for="favoriteMemory" class="form-label">Favorite Chelsea Memory</label>
+                <textarea class="form-control" id="favoriteMemory" name="favoriteMemory" rows="3" maxlength="500"></textarea>
+            </div>
+            <!-- radio button 1-->
+            <br>
+            <div class="mb-3">
+                <label class="form-label">Where did you hear about us?</label><br>
+                <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="radio" name="heardFrom" id="google" value="Google">
+                    <label class="form-check-label" for="google">Google</label>
+                </div>
+                <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="radio" name="heardFrom" id="facebook" value="Facebook">
+                    <label class="form-check-label" for="facebook">Facebook</label>
+                </div>
+                <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="radio" name="heardFrom" id="linkedFromOtherSite" value="Linked from other site">
+                    <label class="form-check-label" for="linkedFromOtherSite">Fan site</label>
+                </div>
+                <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="radio" name="heardFrom" id="other" value="Other">
+                    <label class="form-check-label" for="other">Other</label>
+                </div>
+            </div>
+            <!-- radio button 2-->
+            <br>
+            <div class="mb-3">
+                <label class="form-label">Gender</label><br>
+                <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="radio" name="gender" id="male" value="Male">
+                    <label class="form-check-label" for="male">Male</label>
+                </div>
+                <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="radio" name="gender" id="female" value="Female">
+                    <label class="form-check-label" for="female">Female</label>
+                </div>
+                <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="radio" name="gender" id="otherGender" value="Other">
+                    <label class="form-check-label" for="otherGender">Other</label>
+                </div>
+            </div>
+            <!-- checkbox -->
+            <br>
+            <div class="mb-3 form-check checkbox">
+                <input type="checkbox" class="form-check-input" id="communityGuidelines" name="communityGuidelines" required>
+                <label class="form-check-label" for="communityGuidelines">I agree to the community guidelines</label>
+            </div>
+            <br>
+            <div class="d-grid gap-2 d-md-flex justify-content-md-center">
+                <button type="submit" onclick="setAction('register')" class="btn btn-primary btn-lg flex-grow-1 me-md-2">Register</button>
+                <button type="reset" class="btn btn-primary btn-lg flex-grow-1 me-md-2">Reset</button>
+                <button type="button" onclick="setAction('email')" class="btn btn-primary btn-lg flex-grow-1 me-md-2">Send email</button>
+            </div>
+            <br>
+            <div class="mt-5 d-grid d-md-flex justify-content-center col-lg-6 mx-auto">
+                <button type="button" class="btn btn-warning text-danger fw-bold fs-5 flex-grow-1" id="visuallyImpairedButton">Contrast Mode</button>
+            </div>
+            <br><br>
+        </form>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    <script>
+        function setAction(type) {
+            var form = document.getElementById('myForm');
+            if (type === 'register') {
+                form.action = 'register_success.html';
+                form.method = 'GET';
+                form.submit(); // Submit to server for registration
+            } else if (type === 'email') {
+                form.action = 'mailto:your-email@example.com';
+                form.method = 'POST';
+                form.enctype = 'text/plain';
+                form.submit(); // Submit form as an email
+            }
+        }
+    </script>
+    <script>
+        document.getElementById('visuallyImpairedButton').addEventListener('click', function() {
+            if (document.body.classList.contains('visually-impaired')) {
+                document.body.classList.remove('visually-impaired');
+                document.getElementById('visuallyImpairedButton').textContent = 'Contrast Mode';
+            } else {
+                document.body.classList.add('visually-impaired');
+                document.getElementById('visuallyImpairedButton').textContent = 'Standard View';
+            }
+        });
+    </script>
+</body>
+</html>

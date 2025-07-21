@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chelsea Football Club - Fan Site</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <!-- Bootstrap icons-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.0/font/bootstrap-icons.css" rel="stylesheet">
+    <!-- Custom CSS -->
+    <link href="styles.css" rel="stylesheet">
+</head>
+<body>
+    <!-- header (logo, cim, navbar, login / regisztracio ikon es menu)-->
+    <header class="header">    
+        <div class="container-fluid">
+            <div class="row align-items-center">
+                <!-- Logo column -->
+                <div class="col-2 logo p-3">
+                    <a href="./index.html">
+                        <img src="img/logo.png" alt="Chelsea Football Club Logo" class="img-fluid">
+                    </a>
+                </div>
+                
+                <!-- Content column -->
+                <div class="col-8 text-center">
+                    <!-- Banner row -->
+                    <div class="row">
+                        <div class="col text-light my-5">
+                            <h1 class="display-2 fw-bold">News of the day</h1>
+                        </div>
+                    </div>
+                    <!-- Navbar row -->
+                    <aside>
+                        <nav class="navbar navbar-expand-lg navbar-light bg-light mx-20">
+                            <button class="navbar-toggler ms-3" type="button" data-bs-toggle="collapse" data-bs-target="#navbar01" aria-controls="navbar01" aria-expanded="false" aria-label="Toggle navigation">
+                                <span class="navbar-toggler-icon"></span>
+                            </button>
+                            <div class="collapse navbar-collapse ms-5" id="navbar01">
+                                <div class="row justify-content-md-center col-12">
+                                  <div class="navbar-nav justify-content-md-center text-center">
+                                    <a class="nav-link active fs-5 col-2" href="#home">Home</a>
+                                    <a class="nav-link fs-5 col-2" href="./history.html">History</a>
+                                    <a class="nav-link fs-5 col-2" href="./stamford_bridge.html">Stamford Bridge</a>
+                                    <a class="nav-link fs-5 col-2" href="./squad.html">Squad</a>
+                                    <!-- Visually Impaired View Button -->
+                                    <a class="nav-link fs-5 col-2 text-danger fw-bold" id="visuallyImpairedButton">Contrast Mode</a>
+                                  </div>
+                                </div>
+                            </div>
+                        </nav>
+                    </aside>
+                </div>                 
+                
+                <!-- Login icon column -->
+                <div class="col-2 text-end">
+                    <div class="login-icon me-3">
+                        <a href="#" class="btn btn-secondary dropdown-toggle" id="loginDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            <i class="bi bi-person-circle fs-3"></i>
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="loginDropdown">
+                            <li><a class="dropdown-item" href="login_reg_succes/login.html"><i class="bi bi-box-arrow-in-right me-2"></i>Login</a></li>
+                            <li><a class="dropdown-item" href="login_reg_succes/register.html"><i class="bi bi-person-plus me-2"></i>Register</a></li>
+                        </ul>                        
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- akadalymentesseghez vizualisan kikapcsolt navbar -->
+    <aside>
+        <div class="container">
+            <div class="row my-0">
+                <!-- Navigation Sidebar -->
+                <nav class="col">
+                    <div class="my-insite-nav">
+                        <ul class="nav visually-hidden justify-content-center">
+                            <li class="nav-item">
+                                <a class="nav-link" href="#intro">Introduction message</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#quote">Quote of the Day</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#article1">First article</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#article2">Second article</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#article3">Third article</a>
+                        </ul>
+                    </div>
+                </nav>
+            </div>
+        </div>
+    </aside>
+
+    <!-- oldaltorzs kezdete-->
+    <div class="container">
+        <!-- bemutatkozo -->
+        <section>
+            <div class="row my-5" id="intro">
+                <h2 class="h1 text-center mb-4">Welcome to my Chelsea fan website!</h2>
+                <div class="col-12 article-content">
+                    <p>Welcome to the ultimate destination for <strong>Chelsea Football Club</strong> enthusiasts! Dive into the heart of the Blues with our comprehensive fan website, where every click immerses you in the <em>latest news articles</em>, thrilling <em>video highlights</em>, in-depth <em>squad information</em>, and captivating glimpses into the rich <em>history</em> of this iconic club. Whether you're a die-hard supporter or a casual admirer, join us on a journey through the triumphs, tribulations, and timeless moments that define Chelsea FC's illustrious legacy. Let's celebrate the past, present, and future of the Blues together!</p>
+                </div>
+            </div>
+        </section>
+        <br>
+
+        <!-- idezet -->
+        <section>
+            <div class="row my-quote" id="quote">
+                <div class="col-4 d-flex align-items-center justify-content-center text-center">
+                    <h2 class="h1">Quote of the day</h2>
+                </div>
+                <div class="col-8">
+                    <blockquote class="blockquote">
+                    <p class="mb-0">"I have top players and I'm sorry, we have a top manager. Please do not call me arrogant because what I say is true. I'm European champion. I'm not one out of the bottle. I think I'm a <strong>special one</strong>." <em>- José Mourinho</em></p>
+                    </blockquote>
+                </div>
+            </div>
+        </section>
+        <br>
+        
+        <section>
+            <!-- Cikk 1 -->
+            <article>
+                <div class="row" id="article1">
+                    <div class="col-lg-4 col-md-12">
+                        <h2 class="indexh2"><time datetime="2024-03-07">Thursday, Mar 7, 2024</time></h2>
+                    </div>
+                    <div class="col-lg-8 col-md-12 mb-2">
+                        <h2 class="indexh2">Ben Chilwell to see specialist for knee injury</h2>
+                    </div>
+                    <div class="col-lg-4 col-md-12 mb-2">
+                        <figure>
+                            <a href="./img/large_article1.jpg" target="_blank">
+                                <img src="./img/article1.JPG" class="img-fluid thumbnail-img my-2" alt="Chelsea Left Back Ben Chilwell in excruciating pain as he grabs his knee.">
+                            </a>
+                        </figure>
+                    </div>
+                    <div class="col-lg-8 col-md-12 article-content">
+                        <p> <strong>Ben Chilwell</strong> will miss Monday’s game against Newcastle United, and potentially a fair few games after that, after Mauricio Pochettino revealed that the left back has to see a <em>specialist</em> about a <em>knee injury</em> that he had picked up in our last game, against Brentford.
+                        Has a specialist ever confirmed good news?
+                        Even Pochettino couldn’t muster up as much hopeful (hopeless?) positivity as he normally does while underplaying whatever our latest injury may be.
+                        “We need to wait until he has seen a specialist. We hope it is not a big issue but in this moment, after eight or nine months at the club, I prefer to be cautious and wait. It was his knee and we only found out after the game [against Brentford].
+                        </p>
+                    </div>
+                </div>
+            </article>
+            <br><br>
+            <!-- Cikk 2 -->
+            <article>
+                <div class="row" id="article2">
+                    <div class="col-lg-4 col-md-12">
+                        <h2 class="indexh2"><time datetime="2024-03-06">Thursday, Mar 6, 2024</time></h2>
+                    </div>
+                    <div class="col-lg-8 col-md-12 mb-2">
+                        <h2 class="indexh2">Chelsea ‘impressed by’ Athletic Bilbao winger Nico Williams </h2>
+                    </div>
+                    <div class="col-lg-4 col-md-12 mb-2">
+                        <figure>
+                            <a href="./img/large_article2.jpg" target="_blank">
+                                <img src="./img/article2.JPG" class="img-fluid thumbnail-img my-2" alt="Athletic Bilbao winger/ striker Nico Williams fighting for the ball.">
+                            </a>
+                        </figure>
+                    </div>
+                    <div class="col-lg-8 col-md-12 article-content">
+                        <p> The latest young talent being eyed by Chelsea is <strong>Nico Williams</strong> (younger brother of Iñaki Williams), with the Telegraph reporting yesterday that we’ve been “impressed by” the 21-year-old Athletic Bilbao winger and have thus put him on our radar for the summer. Williams signed an extension with Athletic just a few months ago, but that’s also said to contain a <em>€50m release clause</em>, which is certainly within our wheelhouse. Arsenal are among the many other teams also credited with interest in Williams, who’s putting together another strong season after a breakout campaign last year. He’s expected to be among the hotter names in the upcoming <em>summer transfer window</em>.
+                        </p>
+                    </div>
+                </div>
+            </article>
+            <br><br>
+            <!-- Cikk 3 -->
+            <article>
+                <div class="row" id="article3">
+                    <div class="col-lg-4 col-md-12 mb-2">
+                        <h2 class="indexh2"><time datetime="2024-03-04">Thursday, Mar 4, 2024</time></h2>
+                    </div>
+                    <div class="col-lg-8 col-md-12 mb-2">
+                        <h2 class="indexh2">Romelu Lukaku heating up for Roma, stays cool on talk of future </h2>
+                    </div>
+                    <div class="col-lg-4 col-md-12">
+                        <figure>
+                            <a href="./img/large_article3.jpg" target="_blank">
+                                <img src="./img/article3.JPG" class="img-fluid thumbnail-img my-2" alt="Chelsea striker Romelu Lukaku, on loan at AS Roma, strikes the ball.">
+                            </a>
+                        </figure>
+                    </div>
+                    <div class="col-lg-8 col-md-12 article-content">
+                        <p> AS Roma absolutely hammered Roberto De Zerbi’s Brighton & Hove Albion last night in the first leg of their Europa League Round of 16 tie in Rome, 4-0, with <strong>Romelu Lukaku</strong> getting in on the action as well.
+                        The Chelsea loanee gave the home side a two-goal lead just before half-time, taking advantage of a mistake from Lewis Dunk, before Roma essentially put the tie to bed with two more goals in the second half.
+                        Lukaku has now <strong>scored in back-to-back games</strong> (in all competitions) after going five without a goal in the league.
+                        Chelsea are said to have a <em>£37m “exit agreement”</em> with Lukaku, so hopefully he keeps up his goalscoring — he has 18 on the season in all competitions.
+                        </p>
+                    </div>
+                </div>
+            </article>
+            <br><br>
+        </section>
+    </div>
+
+    <!-- footer-->
+    <div class="col-12">
+        <footer class="footer">
+            <div class="footer-links">
+                <a href="https://www.chelseafc.com/en/supporters-clubs" target="_blank">Official Chelsea FC website</a>
+                <a href="https://weaintgotnohistory.sbnation.com/" target="_blank">Popular Fan site</a>
+                <a href="https://theshed.chelseafc.com/bridge/extras/fan-blogs/" target="_blank">Fan blogs</a>
+                <a href="https://www.transfermarkt.com/" target="_blank">Transfermarkt - player valuations and rumours</a>
+            </div>
+            <div class="copyright">
+                <p>&copy; 2024 Chelsea Fan Site. All rights reserved. This is a fan site and is not affiliated with Chelsea Football Club. All images and content belong to their respective owners.</p>
+            </div>
+        </footer>
+    </div>
+
+    <!-- Bootstrap JavaScript Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    <script>
+        document.getElementById('visuallyImpairedButton').addEventListener('click', function() {
+            if (document.body.classList.contains('visually-impaired')) {
+                document.body.classList.remove('visually-impaired');
+                document.getElementById('visuallyImpairedButton').textContent = 'Contrast Mode';
+            } else {
+                document.body.classList.add('visually-impaired');
+                document.getElementById('visuallyImpairedButton').textContent = 'Standard View';
+            }
+        });
+    </script>
+</body>
+</html>
